@@ -1,16 +1,17 @@
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt  
+import matplotlib.pyplot as plt
+
 
 def plot_bar(
-    data: pd.DataFrame, 
-    x_col: str, 
-    y_col: str, 
-    title: str, 
-    xlabel: str = "", 
-    ylabel: str = "", 
-    palette: str = "dark:b_r", 
-    figsize: tuple = (10,6)
+    data: pd.DataFrame,
+    x_col: str,
+    y_col: str,
+    title: str,
+    xlabel: str = "",
+    ylabel: str = "",
+    palette: str = "dark:b_r",
+    figsize: tuple = (10, 6),
 ) -> None:
     """
     Plot a bar chart using Seaborn.
@@ -27,12 +28,15 @@ def plot_bar(
     """
     plt.figure(figsize=figsize)
     sns.set_theme(style="ticks")
-    ax = sns.barplot(data=data, x=x_col, y=y_col, hue=x_col, palette=palette, legend=False)
+    ax = sns.barplot(
+        data=data, x=x_col, y=y_col, hue=x_col, palette=palette, legend=False
+    )
     sns.despine()
     plt.title(title)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.show()
+
 
 def plot_pie_charts(df: pd.DataFrame, column_mappings: dict) -> None:
     """

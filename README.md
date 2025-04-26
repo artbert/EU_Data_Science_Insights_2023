@@ -114,6 +114,4 @@ Through this project, I have grown in several dimensions:
 
 This project draws major inspiration from the creative work of [Luke Barousse](https://www.lukebarousse.com). His innovative approach to data visualization has profoundly influenced the methodology and presentation of the analyses.
 
----
-
 By exploring each notebook, you’ll discover a detailed, methodical investigation into the multifaceted European data science job market in 2023. From understanding market overviews and skill trends to identifying the optimal combinations for career success, this project provides both valuable insights and a robust demonstration of practical data science skills.
